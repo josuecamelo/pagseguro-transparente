@@ -23,6 +23,7 @@ Route::get('cart/destroy/{id}', ['as'=>'cart.destroy', 'uses'=>'CartController@d
 Route::group(['middleware' => 'auth'],function(){
     Route::get('checkout/placeOrder', ['as' => 'checkout.place', 'uses' => 'CheckoutController@place']);
     Route::get('account/orders', ['as' => 'account.orders', 'uses' => 'AccountController@orders']);
+    Route::get('checkout/obter/sessao', ['as' => 'checkout.session', 'uses' => 'CheckoutController@getSession']);
 });
 
 
