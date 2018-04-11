@@ -46,10 +46,14 @@ class CheckoutController extends Controller {
 
         $cart = Session::get('cart');
 
-        if($cart->getTotal() > 0){
-            dd($cart->all());
+        //if($cart->getTotal() > 0){
+            //dd($cart->all());
             // $cart->limpar(); //Limpando Carrinho
-        }
+        //}
+
+        //dd($cart);
+
+        return view('loja.place', compact('cart'));
     }
 
     public function getSession(){

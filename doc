@@ -1,0 +1,6 @@
+Urls Checkout Transparente
+
+Obter Sessão PagSeguro
+http://localhost:8000/checkout/obter/sessao
+
+
